@@ -7,11 +7,13 @@ Página estática responsiva para o exemplo de texto da 3ª série.
 - `index.html` — conteúdo da história e estrutura da página.
 - `styles.css` — visual, fonte maior e responsividade.
 - `script.js` — truque secreto ativado ao pressionar a imagem.
-- `chatgpt.png` — ilustração dos patinhos fornecida.
+- `chatgpt.png` — ilustração dos patinhos.
 
 ## Truque secreto
 
-Ao manter o dedo ou o botão do mouse pressionado sobre a imagem dos patinhos, o texto da história muda temporariamente para a versão secreta. Assim que o dedo ou o mouse é solto, o texto original volta.
+Ao manter o dedo ou o botão do mouse pressionado sobre os patinhos, o texto da história muda temporariamente para a versão secreta. Ao soltar, o texto original volta.
+
+A ilustração agora é exibida como **imagem de fundo do botão**, e não como uma tag `<img>`. Isso evita que o iPhone abra o menu de “Salvar no App Fotos”, “Compartilhar” e “Copiar” durante a pressão longa. O menu de contexto também é bloqueado pelo JavaScript.
 
 ## Publicar no GitHub Pages
 

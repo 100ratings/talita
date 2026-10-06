@@ -29,7 +29,11 @@ function restoreNormalText() {
   renderText(normalText);
 }
 
-// pointer events funcionam tanto para toque quanto para mouse.
+// A imagem é um fundo CSS, não uma tag <img>; isso evita o menu de salvar no iPhone.
+trigger.addEventListener('contextmenu', (event) => event.preventDefault());
+trigger.addEventListener('dragstart', (event) => event.preventDefault());
+
+// Pointer Events funcionam tanto para toque quanto para mouse.
 trigger.addEventListener('pointerdown', (event) => {
   event.preventDefault();
   trigger.setPointerCapture?.(event.pointerId);
@@ -40,7 +44,7 @@ trigger.addEventListener('pointerup', restoreNormalText);
 trigger.addEventListener('pointercancel', restoreNormalText);
 trigger.addEventListener('pointerleave', restoreNormalText);
 
-// Também permite testar o segredo usando teclado, sem alterar a experiência no celular.
+// Também permite testar o segredo usando teclado.
 trigger.addEventListener('keydown', (event) => {
   if (event.key === ' ' || event.key === 'Enter') {
     event.preventDefault();
