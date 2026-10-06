@@ -11,7 +11,7 @@ const normalText = [
 
 const secretText = [
   'Tarata tcheim una pati na cháchala do Tchau Chico.',
-  'A pati de Tarata chamaçi Tati.',
+  'A pati de Tarata chamaçi <strong>Tati</strong>.',
   'Tati é uma pati muicjo esprecha e bonita.',
   'Tati e o pati Tomé tcheim oilivid patinhos.',
   'Tati caida muirtdo bem de seus filatilhos.'
